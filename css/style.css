@@ -345,3 +345,76 @@ header{
         margin-top: 20px;
     }
 }
+
+
+
+@media screen  and (max-width: 600px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav>a{
+        margin: 10px;
+        font-size: 13px;
+    }
+    .logo{
+        width: 300px;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+    }
+    .logo>div>.title{
+        font-size: 28px;
+    }
+    .logo>div>div>p{
+        font-size: 14px;
+    }
+    .logo>div>div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main>div:nth-child(1){
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+}
+
+
+@media screen  and (max-width: 470px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav>a{
+        margin: 20px;
+        font-size: 8px;
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        width: 300px;
+    }
+    .logo>img{
+        width: 50px;
+    }
+    .logo>div>.title{
+        font-size: 26px;
+    }
+    .logo>div>div>p{
+        font-size: 13px;
+        position: relative;
+        top: 9px;
+    }
+    .logo>div>div{
+        display: grid;
+        grid-template-columns: 0.7fr 1fr;
+    }
+    .main>div:nth-child(1){
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .photo>img{
+        width: 150px;
+    }
+
+}
